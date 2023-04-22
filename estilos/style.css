@@ -1,0 +1,162 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cutive&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --cor-principal: #2130DB;
+    --cor-secundaria: #1864F2;
+    --cor-terciaria: #1797E8;
+    --cor-distante: #7717E8;
+    --font-maquina: 'Cutive', serif;
+    --fonte-jogo: 'Press Start 2P', cursive;
+}
+body {
+    height: 100vh;
+    background: linear-gradient(to right,var(--cor-secundaria), var(--cor-terciaria));
+    font-family: 'Montserrat', sans-serif;
+    text-indent: 40px;
+}
+.headerNav {
+    position: fixed;
+   top: 0;
+   width: 100%;
+   height: 80px;
+   z-index: 999px;
+   background-color: #1864f2a8;
+}
+div > .header > p {
+    background: -webkit-linear-gradient(var(--cor-principal), var(--cor-distante), var(--cor-secundaria));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Courgette', arial, cursive;
+    font-weight: bolder;
+    filter: drop-shadow(4px 4px 2px var(--cor-terciaria));
+    margin: 0;
+    width: max-content;
+}
+button {
+    color: var(--cor-distante) !important;
+    border-color: var(--cor-distante) !important;
+    box-shadow: 5px 5px 5px var(--cor-principal);
+    margin: 0 20px;
+    background-color: var(--cor-terciaria) !important;
+}
+button:hover {
+    transform: scale(1.1);
+    transition: 0.8s;
+    background-color: #fff !important;
+}
+.btnNav:hover > :not(:hover) {
+    opacity: .5;
+    transform: scale(.9);
+    transition: .8s;
+}
+#foto {
+    width: 300px;
+    height: 300px;
+    background: #fff url("../_imagens/teste.png");
+    background-size: cover;
+    margin-right: 10px;
+    box-shadow: 5px 15px 15px var(--cor-secundaria);
+    border-radius: 50% 50% 50% 50% / 67% 66% 34% 33%  ; 
+    float: right;
+}
+#foto:hover {
+    transform: scale(.8);
+    transition: .5s;
+}
+#nome::after {
+    content: '|';
+    margin-left: 5px;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink {
+    0% {opacity: 1;}
+    100% {opacity: 0;}
+}
+#nome{
+    font-family: var(--font-maquina);
+    color: var(--cor-principal);
+    text-shadow: 2px 2px 15px var(--cor-terciaria);
+}
+#pad {
+    height: 10vh;
+}
+#bio {
+    padding: 40px;
+    border-radius: 40px;
+    background-color: #ffffff17;
+    color: #fff;
+    font-weight: bolder;
+    text-align: justify;
+    height: 80vh;
+}
+.tec {
+    height: 100vh;
+    background: #000 url(../_imagens/javascript-vscode-editor-code.jpg) no-repeat fixed;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Courgette', arial, cursive;
+    font-weight: bolder;
+}
+.tec > div > h1, #title {
+    font-family: var(--fonte-jogo);
+}
+.habilidades {
+    display: inline-flex;
+    width: 150px;
+    height: 150px;
+    border-radius: 25px;
+    filter: grayscale(100%);
+}
+#html {
+    margin-left: -30px;
+    background: #ffffff67 url(../_imagens/html-5.png) no-repeat;
+    background-size: contain;
+}
+#css {
+    background: #ffffff67 url(../_imagens/css-3.png) no-repeat;
+    background-size: contain;
+}
+#js {
+    background: #ffffff67 url(../_imagens/js.png) no-repeat;
+    background-size: contain;
+}#sass {
+    background: #ffffff67 url(../_imagens/sass.png) center  no-repeat;
+    background-size: contain;
+}
+#bootstrap {
+    background: #ffffff67 url(../_imagens/Bootstrap.png) center no-repeat;
+    background-size: contain;
+}
+#vuetify {
+    background: #ffffff67 url(../_imagens/vuetify.svg) no-repeat;
+    background-size: contain;
+}
+#vue {
+    background: #ffffff67 url(../_imagens/vue.webp) no-repeat;
+    background-size: contain;
+}#git {
+    background: #ffffff67 url(../_imagens/git.png) no-repeat;
+    background-size: contain;
+}
+#github {
+    background: #ffffff67 url(../_imagens/github.png) no-repeat;
+    background-size: contain;
+}
+.habilidades:hover {
+    transform: scale(1.2);
+    transition: .5s;
+    filter: grayscale(0%);
+}
+.habilidadescontainer:hover :not(:hover) {
+    transform: scale(.8);
+    transition: .5s;
+}
