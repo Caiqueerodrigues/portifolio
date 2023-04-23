@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+.p-projetos {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff8c;
+    color: var(--cor-principal);
+    min-width: 100%;
+    min-height: 100%;
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 20px;
+    text-indent: 0;
+    padding: 25px 5px;
+}
+#projetos {
+    height: 100vh;
+    font-family: var(--fonte-jogo);
+    color: #fff;
+    font-weight: bolder;
+}
+.projetos {
+    width: 200px;
+    height: 170px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px var(--cor-terciaria);
+    margin: 10px;
+}
+#urna {
+    background: transparent url(../_imagens/projetos/urna.png);
+}
+#pedra {
+    background: transparent url(../_imagens/projetos/pedra\,papel\,tesoura.png);
+}
+#space {
+    background: transparent url(../_imagens/projetos/one-bit-x.png);
+}
+#calculadora {
+    margin: 0 auto;
+    background: transparent url(../_imagens/projetos/calculadora.png);
+}
+#velha {
+    background: transparent url(../_imagens/projetos/jogo-da-vellha.png);
+}
+#controlev1 {
+    background: transparent url(../_imagens/projetos/casa-de-racao.png);
+}
+#controlev2 {
+    background: transparent url(../_imagens/projetos/casa-de-racao-v2.png);
+}
+#urnaLegenda, #pedraLegenda, #spaceLegenda, #calculadoraLegenda, #velhaLegenda, #controlev1Legenda, #controlev2Legenda {
+    display: none;
+}
+i:hover {
+    color: var(--cor-distante);
+    transition: .5s;
+}
+
+a {
+    text-decoration: none;
+}
+a:visited {
+ color: #fff;
+}

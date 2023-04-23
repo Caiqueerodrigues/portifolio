@@ -63,3 +63,12 @@ function fim() {
     title.textContent = ''
     descricaoP.textContent = frase
 }
+
+function legenda (num, projeto) {
+    if(num === 1) {
+        document.getElementById(projeto + 'Legenda').style.display='block'
+    }
+    if (num === 2) {
+        document.getElementById(projeto + 'Legenda').style.display='none'
+    }
+}

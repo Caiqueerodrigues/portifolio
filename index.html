@@ -38,7 +38,7 @@
                             class="fluid btnNav pt-3"
                         >
                             <a 
-                                href="#pad"
+                                href="#padBio"
                             >
                                 <button
                                     class="btn btn-outline-success"
@@ -48,7 +48,7 @@
                                 </button>
                             </a>
                             <a 
-                                href="#tec"
+                                href="#padTec"
                             >
                                 <button
                                     class="btn btn-outline-success"
@@ -58,7 +58,7 @@
                                 </button>
                             </a>
                             <a 
-                                href="#projetos"
+                                href="#padProj"
                             >
                                 <button
                                     class="btn btn-outline-success"
@@ -68,7 +68,7 @@
                                 </button>
                             </a>
                             <a 
-                                href="#contato"
+                                href="#padCont"
                             >
                                 <button
                                     class="btn btn-outline-success"
@@ -82,7 +82,10 @@
                 </div>
                 <hr>
             </div>
-            <div id="pad"></div>
+            <div 
+                id="padBio"
+                class="pad"
+            ></div>
             <!--bio-->
             <div 
                 id="bio"
@@ -129,6 +132,7 @@
                 </div>
                 <div 
                     class="col-4"
+                    data-aos="fade-left"
                 >
                     <a 
                         href="https://www.linkedin.com/in/caique-rodrigues-a113ab249/" target="_blank"
@@ -142,6 +146,10 @@
             </div>
             <!--habilidades-->
             <div 
+                id="padTec"
+                class="pad"
+            ></div>
+            <div 
                 class="row tec px-5"
                 id="tec"
             >
@@ -154,7 +162,10 @@
                     <div 
                         class="row align-items-center justify-content-center pt-5"
                     >
-                        <div class="col-5 habilidadescontainer">
+                        <div 
+                            class="col-5 habilidadescontainer"
+                            data-aos="fade-down-right"    
+                        >
                             <div 
                                 class="habilidades"
                                 id="html"
@@ -211,7 +222,8 @@
                             ></div>
                         </div>
                         <div 
-                            class="col-5" 
+                            class="col-5"
+                            data-aos="fade-down-left" 
                         >
                             <h1
                                 id="title"
@@ -226,6 +238,263 @@
                         </div>
                     </div>
                 </div>
+            </div>
+            <!--Projetos-->
+            <div 
+                id="padProj"
+                class="pad"
+            ></div>
+            <div 
+                class="row align-items-center justify-content-center"
+                >
+                <div 
+                    class="col-12 text-center"
+                    id="projetos"
+                >
+                    <h1>Projetos</h1>
+                    <div 
+                        class="col-5 d-inline-flex"
+                    >
+                        <div>
+                            <div
+                                data-aos="fade-down"
+                                class="projetos"
+                                id="urna"
+                                onmouseenter="legenda(1,'urna')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="urnaLegenda"
+                                    onmouseout="legenda(2,'urna')"
+                                >
+                                    Primeiro Projeto criado sozinho - <br> Urna eletrônica.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://github.com/Caiqueerodrigues/urna"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-github"
+                                ></i>
+                            </a>
+                            <a 
+                                href="https://urnaeletronicacr.netlify.app/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                ></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div
+                                class="projetos"
+                                id="pedra"
+                                data-aos="fade-down"
+                                onmouseenter="legenda(1,'pedra')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="pedraLegenda"
+                                    onmouseout="legenda(2,'pedra')"
+                                >
+                                    Jogo de Pedra, Papel ou Tesoura, de um player somente, com jogadas aleatórias do computador.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://github.com/Caiqueerodrigues/Pedra-Papel-Tesoura"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-github"
+                                ></i>
+                            </a>
+                            <a
+                                href="https://pedrapapeltesouracr.netlify.app/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                ></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div
+                                class="projetos"
+                                id="space"
+                                data-aos="fade-down"
+                                onmouseenter="legenda(1,'space')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="spaceLegenda"
+                                    onmouseout="legenda(2,'space')"
+                                >
+                                    Projeto de aplicação desenvolvido para finalização do módulo de HTML e CSS.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://github.com/Caiqueerodrigues/OneBitCodeX"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-github"
+                                ></i>
+                            </a>
+                            <a 
+                                href="https://spacecr.netlify.app/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div 
+                        class="col-2 mx-auto"
+                    >
+                        <div>
+                            <div
+                                class="projetos"
+                                id="calculadora"
+                                data-aos="fade-right"
+                                onmouseenter="legenda(1,'calculadora')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="calculadoraLegenda"
+                                    onmouseout="legenda(2,'calculadora')"
+                                >
+                                    Projeto de aplicação desenvolvido para finalização do módulo de lógica de programação.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://github.com/Caiqueerodrigues/calculadora"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-github"
+                                ></i>
+                            </a>
+                            <a 
+                                href="https://calculadoracr.netlify.app/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div 
+                        class="col-5 d-inline-flex"
+                    >
+                        <div>
+                            <div
+                                class="projetos"
+                                id="velha"
+                                data-aos="fade-up"
+                                onmouseenter="legenda(1,'velha')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="velhaLegenda"
+                                    onmouseout="legenda(2,'velha')"
+                                >
+                                    Jogo da velha para 2 players, com contador de pontos e empates, sorteador de quem começa.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://github.com/Caiqueerodrigues/jogoDaVelha"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-github"
+                                ></i>
+                            </a>
+                            <a 
+                                href="https://jogodavelhacr.netlify.app/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                ></i>
+                            </a>
+                        </div>
+                        <div>
+                            <div
+                                class="projetos"
+                                id="controlev1"
+                                data-aos="fade-up"
+                                onmouseenter="legenda(1,'controlev1')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="controlev1Legenda"
+                                    onmouseout="legenda(2,'controlev1')"
+                                >
+                                    Projeto idealizado e criado para uma casa de ração local.
+                                </p>
+                            </div>
+                            <a 
+                                href="https://github.com/Caiqueerodrigues/controle-estoque"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-github"
+                                ></i>
+                            </a>
+                            <a 
+                                href="https://controleestoquev1.netlify.app/"
+                                target="_blank"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                >
+                                </i>
+                            </a>
+                        </div>
+                        <div>
+                            <div
+                                class="projetos"
+                                id="controlev2"
+                                data-aos="fade-up"
+                                onmouseenter="legenda(1,'controlev2')"
+                            >
+                                <p
+                                    class="p-projetos"
+                                    id="controlev2Legenda"
+                                    onmouseout="legenda(2,'controlev2')"
+                                >
+                                    Projeto refeito com VUETIFY, VUE e NUXT.
+                                    EM PRODUÇÃO.
+                                </p>
+                            </div>
+                                <a 
+                                    href="https://github.com/Caiqueerodrigues/-controleEstoque-v2"
+                                    target="_blank"
+                                >
+                                    <i 
+                                        class="bi bi-github"
+                                    ></i>
+                                </a>
+                            <a 
+                                href="#padProj"
+                            >
+                                <i
+                                    class="bi bi-browser-chrome"
+                                ></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div 
+                class="footer fluid"
+            >
+                <hr>
             </div>
         </div>
 
