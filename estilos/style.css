@@ -105,6 +105,6 @@ button:hover {
 
 .footer {
     background-color: var(--cor-principal);
-    height: 5vh;
-    width: 98vw;
+    height: 10vh;
+    width: 98,5vw;
 }
