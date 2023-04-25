@@ -19,14 +19,14 @@
     font-weight: bolder;
 }
 .projetos {
-    width: 200px;
-    height: 170px;
+    width: 90%;
+    height: 200px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px var(--cor-terciaria);
     margin: 10px;
 }
 #urna {
-    background: transparent url(../_imagens/projetos/urna.png);
+    background: transparent url(../_imagens/projetos/urna.png) center bottom;
 }
 #pedra {
     background: transparent url(../_imagens/projetos/pedra\,papel\,tesoura.png);
@@ -35,7 +35,7 @@
     background: transparent url(../_imagens/projetos/one-bit-x.png);
 }
 #calculadora {
-    margin: 0 auto;
+    background-size: contain;
     background: transparent url(../_imagens/projetos/calculadora.png);
 }
 #velha {
@@ -53,6 +53,34 @@
 i:hover {
     color: var(--cor-distante);
     transition: .5s;
+}
+
+#emBreve {
+    background-color: #ffffffb1;
+    overflow: hidden;
+    display: flex;
+    place-content: center;
+}
+#virada {
+    display: flex;
+    background-color: #1864F2;
+    padding: 15px;
+    min-width: 112%;
+    height: 30%;
+    font-size: 1.2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    transform: rotate(-35deg);
+    justify-content: center;
+    margin-top: 65px;
+    box-shadow: 2px 2px 35px #1797E8;
+    text-shadow: 2px 2px 5px var(--cor-distante);
+}
+#virada:hover {
+    animation: space 2s;
+}
+@keyframes space {
+    0% {letter-spacing: 1rem;}
+    100% {letter-spacing: 1.5rem;}
 }
 
 a {
