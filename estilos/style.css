@@ -103,8 +103,34 @@ button:hover {
     height: 80vh;
 }
 
+#contato {
+    min-height: 90vh;
+}
+.titleContact {
+    padding-top: 8vh;
+    font-family: var(--fonte-jogo);
+    color: white;
+}
+span {
+    font-size: 50px;
+    display: block;
+    text-align: center;
+}
+i > span {
+    display: inline;
+    font-size: 1.5rem;
+}
+a > i:hover {
+    color: var(--cor-distante);
+}
+#whatsapp, #gmail {
+    color: #fff;
+}
+#gmail:hover, #whatsapp:hover {
+    color: var(--cor-distante);
+}
 .footer {
     background-color: var(--cor-principal);
-    height: 10vh;
-    width: 98,5vw;
+    height: 7vh;
+    color: #fff;
 }
