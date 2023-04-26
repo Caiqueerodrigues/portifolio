@@ -50,11 +50,20 @@
 #urnaLegenda, #pedraLegenda, #spaceLegenda, #calculadoraLegenda, #velhaLegenda, #controlev1Legenda, #controlev2Legenda {
     display: none;
 }
+i {
+    color: var(--cor-principal);
+    text-shadow: 3px 3px 15px var(--cor-distante);
+}
 i:hover {
     color: var(--cor-distante);
     transition: .5s;
 }
 
+.pNome {
+    font-size: 1.3rem;
+    font-family: 'Courgette', sans-serif;
+    margin-bottom: 0;
+}
 #emBreve {
     background-color: #ffffffb1;
     overflow: hidden;
@@ -68,7 +77,7 @@ i:hover {
     min-width: 112%;
     height: 30%;
     font-size: 1.2rem;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courgette', sans-serif;
     transform: rotate(-35deg);
     justify-content: center;
     margin-top: 65px;

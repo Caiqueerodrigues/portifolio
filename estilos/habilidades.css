@@ -12,6 +12,9 @@
 .tec > div > h1, #title {
     font-family: var(--fonte-jogo);
 }
+#descricao {
+    font-size: 1.35rem;
+}
 .habilidades {
     display: inline-flex;
     width: 150px;
@@ -63,4 +66,48 @@
 .habilidadescontainer:hover :not(:hover) {
     transform: scale(.8);
     transition: .5s;
+}
+
+.progresso {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    text-indent: 0;
+    place-content: center;
+    display: none;
+}
+.progresso > span {
+    position: absolute;
+    font-size: 2.2rem;
+    background-color: transparent;
+    padding-top: 1%;
+}
+.progresso > span > span {
+    font-size: 1rem;
+    position: absolute;
+    background-color: transparent;
+    margin-left: -10px;
+}
+svg{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    z-index: 1000;
+}
+svg circle{
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: #191919;
+    stroke-width: 10;
+    stroke-linecap: round;
+    transform: translate(5px,5px);
+    position: relative;
+
+
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+
+    stroke-dashoffset: calc(440 - (440*90) /100);
+    stroke: var(--cor-principal);
 }
