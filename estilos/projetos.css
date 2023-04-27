@@ -26,26 +26,32 @@
     margin: 10px;
 }
 #urna {
-    background: transparent url(../_imagens/projetos/urna.png) center bottom;
+    background: transparent url(../_imagens/projetos/urna.png) center;
+    background-size: cover;
 }
 #pedra {
-    background: transparent url(../_imagens/projetos/pedra\,papel\,tesoura.png);
+    background: transparent url(../_imagens/projetos/pedra\,papel\,tesoura.png) center;
+    background-size: cover;
 }
 #space {
-    background: transparent url(../_imagens/projetos/one-bit-x.png);
+    background: transparent url(../_imagens/projetos/one-bit-x.png) center;
+    background-size: cover;
 }
 #calculadora {
-    background-size: contain;
-    background: transparent url(../_imagens/projetos/calculadora.png);
+    background-size: cover;
+    background: transparent url(../_imagens/projetos/calculadora.png)center;
 }
 #velha {
-    background: transparent url(../_imagens/projetos/jogo-da-vellha.png);
+    background: transparent url(../_imagens/projetos/jogo-da-vellha.png) center;
+    background-size: cover;
 }
 #controlev1 {
-    background: transparent url(../_imagens/projetos/casa-de-racao.png);
+    background: transparent url(../_imagens/projetos/casa-de-racao.png)center;
+    background-size: cover;
 }
 #controlev2 {
-    background: transparent url(../_imagens/projetos/casa-de-racao-v2.png);
+    background: transparent url(../_imagens/projetos/casa-de-racao-v2.png)center;
+    background-size: cover;
 }
 #urnaLegenda, #pedraLegenda, #spaceLegenda, #calculadoraLegenda, #velhaLegenda, #controlev1Legenda, #controlev2Legenda {
     display: none;

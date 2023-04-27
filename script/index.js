@@ -26,8 +26,8 @@ function descricao(element) {
         title.textContent = 'HTML'
         descricaoP.textContent = `É uma linguagem de marcação de texto, o esqueleto de uma aplicação WEB.`
         barraProgresso.style.display = 'flex'
-        circule.style.strokeDashoffset= 'calc(440 - (440*95) /100)'
-        porcentagemBarra.innerHTML = `${textContent} 95%`
+        circule.style.strokeDashoffset= 'calc(440 - (440*90) /100)'
+        porcentagemBarra.innerHTML = `${textContent} 90%`
 
     }
     if( element === 'css') {
@@ -68,7 +68,7 @@ function descricao(element) {
     }
     if( element === 'vue') {
         title.textContent = 'Vue'
-        descricaoP.textContent = `É um framework JavaScript de código aberto para a criação de aplicações web. Criar aplicações de forma reativa, utilizando o DOM virtual, fazendo com que seja extremamente performático.`
+        descricaoP.textContent = `É um framework JavaScript de código aberto para a criação de aplicações web. Cria aplicações de forma reativa, utilizando o DOM virtual, fazendo com que seja extremamente performático.`
         barraProgresso.style.display = 'flex'
         circule.style.strokeDashoffset= 'calc(440 - (440*30) /100)'
         porcentagemBarra.innerHTML = `${textContent} 30%`
