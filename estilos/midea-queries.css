@@ -22,9 +22,6 @@
     #nome {
         text-indent: 0;
     }
-    #foto {
-        display: none;
-    }
     .tec > div > h1, #title {
         padding-top: 10%;
         font-size: 1.2rem;
@@ -76,6 +73,6 @@
         display: inline-flex;
     }
     #menu-tela-grande > li > a > button {
-        font-size: .9rem;
+        font-size: .8rem;
     }
 }
