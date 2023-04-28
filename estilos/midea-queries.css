@@ -68,15 +68,14 @@
     }
 }
 
-/* @media (min-width: 768px) {
-    div > .header > p {
+ @media (min-width: 768px) {
+     /* div > .header > p {
         font-size: 1.4rem;
-    }
+    } */
     #menu-tela-grande {
         display: inline-flex;
     }
     #menu-tela-grande > li > a > button {
         font-size: .9rem;
-        padd
     }
-} */
+}
