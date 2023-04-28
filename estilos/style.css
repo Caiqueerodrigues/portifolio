@@ -153,7 +153,7 @@ span {
     text-align: center;
     color: #fff;
 }
-.bi {
+.bi, a {
     color: #fff;
 }
 i > span {
