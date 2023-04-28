@@ -64,9 +64,6 @@ li {
 #menu-tela-grande, #menu-tela-pequena {
     display: none;
 }
-#menu-tela-pequena {
-    display: block;
-}
 #fechaMenu {
     height: 100vh;
     background-color: transparent;
