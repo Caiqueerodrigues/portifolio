@@ -37,15 +37,9 @@
     .habilidadescontainer {
         font-size: .8rem;
     }
-    #descricao {
-        min-height: 50vh;
-    }
     .pNome {
         font-size: .8rem;
-   }
-   #projetos {
-    height: 170vh;
-   }
+    }
     #virada {
         min-width: 152%;
         height: 30%;
@@ -74,5 +68,11 @@
     }
     #menu-tela-grande > li > a > button {
         font-size: .8rem;
+        width: max-content;
+        margin: 0 15px;
     }
+    #bio {
+        
+    }
+
 }

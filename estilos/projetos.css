@@ -17,6 +17,7 @@
     font-family: var(--fonte-jogo);
     color: #fff;
     font-weight: bolder;
+    height: 170vh;
 }
 .projetos {
     width: 90%;

@@ -14,6 +14,7 @@
 }
 #descricao {
     font-size: 1.35rem;
+    min-height: 50vh;
 }
 .habilidades {
     display: inline-flex;
