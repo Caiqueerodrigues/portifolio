@@ -59,7 +59,7 @@
     }
 }
 
- @media (min-width: 768px) {
+@media (min-width: 768px) {
      /* div > .header > p {
         font-size: 1.4rem;
     } */
@@ -71,8 +71,28 @@
         width: max-content;
         margin: 0 15px;
     }
-    #bio {
-        
+    #foto {
+        display: inline-flex;
+        width: 250px;
+        height: 300px;
     }
-
+    nav {
+        float: right;
+    }
+    #virada {
+        min-width: 200%;
+    }
+    
 }
+
+@media (min-width: 992px) {
+    #menu-tela-grande > li > a > button {
+        font-size: 1.2rem;
+        width: max-content;
+        margin: 0 10px; 
+        border: 3px solid var(--cor-distante);
+    }
+    #projetos {
+        max-height: 100vh;
+    }
+} 

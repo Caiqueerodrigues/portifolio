@@ -49,20 +49,23 @@ li {
     display: inline;
 }
 #menu-tela-pequena > li {
-    display: block;
     background-color: #1864f27a;
-    padding: 10px;
-    width: 100%;
+    padding: 10px ;
     color: #fff;
     font-weight: bolder;
-    text-align: center;
 }
 #menu-tela-pequena {
-    margin-top: -40px;
-    width: 100vh;
+    position: fixed;
+    top: 40px;
+    left: 0;
+    margin-top: 40px;
+    width: 100%;
 }
 #menu-tela-grande, #menu-tela-pequena {
     display: none;
+}
+#menu-tela-pequena {
+    display: block;
 }
 #fechaMenu {
     height: 100vh;
@@ -105,8 +108,8 @@ button:hover {
 }
 #foto {
     display: none;
-    width: 250px;
-    height: 300px;
+    width: 200px;
+    height: 250px;
     background: #fff url(../_imagens/foto.jpg) center no-repeat;
     background-size: contain;
     margin-right: 10px;

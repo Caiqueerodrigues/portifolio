@@ -6,25 +6,23 @@
     color: var(--cor-principal);
     min-width: 100%;
     min-height: 100%;
-    max-width: 200px;
-    max-height: 200px;
     border-radius: 20px;
     text-indent: 0;
     padding: 25px 5px;
 }
 #projetos {
-    height: 100vh;
+    height: 95vh;
     font-family: var(--fonte-jogo);
     color: #fff;
     font-weight: bolder;
     height: 170vh;
 }
 .projetos {
-    width: 90%;
     height: 200px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px var(--cor-terciaria);
-    margin: 10px;
+    margin: 5px;
+    column-gap: 0;
 }
 #urna {
     background: transparent url(../_imagens/projetos/urna.png) center;

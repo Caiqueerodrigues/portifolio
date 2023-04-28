@@ -103,7 +103,7 @@ function fim() {
 
 function legenda (num, projeto) {
     if(num === 1) {
-        document.getElementById(projeto + 'Legenda').style.display='block'
+        document.getElementById(projeto + 'Legenda').style.display='flex'
     }
     if (num === 2) {
         document.getElementById(projeto + 'Legenda').style.display='none'
@@ -127,5 +127,4 @@ document.getElementById('menu-hamburguer').addEventListener('click', () => {
     divFechaMenu.addEventListener('click', () => {
         menu.style.display='none' 
     })
-
 })
