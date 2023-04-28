@@ -2,7 +2,6 @@
 
 
 .tec {
-    height: 100vh;
     background: #000 url(../_imagens/javascript-vscode-editor-code.jpg) no-repeat fixed;
     background-size: cover;
     color: #fff;
@@ -10,6 +9,7 @@
     font-weight: bolder;
 }
 .tec > div > h1, #title {
+    text-indent: 0;
     font-family: var(--fonte-jogo);
 }
 #descricao {

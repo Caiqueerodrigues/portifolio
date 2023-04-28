@@ -10,6 +10,7 @@
         <link rel="icon" type="image/png" sizes="32x32" href="/_imagens/_favicon/favicon-32x32.png">
         <link rel="icon" type="image/png" sizes="16x16" href="/_imagens/_favicon/favicon-16x16.png">  
         <link rel="stylesheet" href="estilos/style.css">
+        <link rel="stylesheet" href="estilos/midea-queries.css">
         <title>Caique Rodrigues</title>
     </head>
     <body>
@@ -21,9 +22,11 @@
                 class="row headerNav"
             >
                 <div 
-                    class="col-6 px-5 pt-3 fs-1 header "
+                    class="col-6 col-lg-3 justify-content-around pt-3 fs-1 header "
                 >
-                    <p>
+                    <p
+                        class="d-inline-flex"
+                    >
                         <a 
                             href="#"
                         >
@@ -32,58 +35,120 @@
                     </p>
                 </div>
                 <div 
-                    class="col-6 mb-3"
+                    class="col-6"
                 >
-                    <nav 
-                        class="navbar pb-0"
+                    <button
+                        id="menu-hamburguer"
                     >
-                        <div 
-                            class="fluid btnNav pt-3"
+                        <span>
+                            <i 
+                                id="btnHamb"
+                                class="bi bi-list"
+                            ></i>
+                        </span>
+                    </button>
+                </div>
+                <div 
+                    class="col-lg-8 mb-8"
+                >
+                    <!--mennu tela grande-->
+                    <nav 
+                        class="navbar pb-0 pt-3"
+                    >
+                        <ul
+                            id="menu-tela-grande"
                         >
-                            <a 
-                                href="#padBio"
-                            >
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
+                            <li>
+                                <a
+                                    href="#padBio"
+                                >
+                                    <button
+                                        class="btn btn-outline-success"
+                                        type="submit"
+                                    >
+                                        Sobre Mim
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#padTec"
+                                >
+                                    <button
+                                        class="btn btn-outline-success"
+                                        type="submit"
+                                    >
+                                        Tecnologias
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#padProj"
+                                >
+                                    <button
+                                        class="btn btn-outline-success"
+                                        type="submit"
+                                    >
+                                        Projetos
+                                    </button>
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#contato"
+                                >
+                                    <button
+                                        class="btn btn-outline-success"
+                                        type="submit"
+                                    >
+                                        Contato
+                                    </button>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <!--menu tela pequena-->
+                    <nav 
+                        class="navbar"
+                    >
+                        <ul
+                            id="menu-tela-pequena"
+                        >
+                            <li>
+                                <a
+                                    href="#padBio"
                                 >
                                     Sobre Mim
-                                </button>
-                            </a>
-                            <a 
-                                href="#padTec"
-                            >
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#padTec"
                                 >
                                     Tecnologias
-                                </button>
-                            </a>
-                            <a 
-                                href="#padProj"
-                            >
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#padProj"
                                 >
                                     Projetos
-                                </button>
-                            </a>
-                            <a 
-                                href="#contato"
-                            >
-                                <button
-                                    class="btn btn-outline-success"
-                                    type="submit"
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="#contato"
                                 >
                                     Contato
-                                </button>
-                            </a>
-                        </div>
+                                </a>
+                            </li>
+                        </ul>
                     </nav>
+                    <div
+                        id="fechaMenu"
+                    ></div>
                 </div>
-                <hr>
             </div>
             <div 
                 id="padBio"
@@ -92,44 +157,32 @@
             <!--bio-->
             <div 
                 id="bio"
-                class="row m-5 justify-content-center align-items-center"
+                class="row mx-1 my-5 justify-content-center align-items-center"
             >
                 <div 
-                    class="col-6"
+                    class="col-12"
                     data-aos="fade-right"
                 >
                     <h1 
                         class="text-center" 
                         id="nome"
                     ></h1>
-                    <p
-                        class="mx-5"
-                    >
+                    <p>
                         Nasci e cresci em Birigui, interior de São Paulo, em 05 de dezembro de 1996.
                     </p>
-                    <p 
-                        class="mx-5"
-                    >
+                    <p>
                         Tenho como hobbies Livros, assitir séries e Games eletrônicos sempre compartilhando com família e amigos.
                     </p>
-                    <p 
-                        class="mx-5"
-                    >
+                    <p>
                         Gosto de desafios, de estar sempre estudando e pesquisando.    
                     </p>
-                    <p
-                        class="mx-5"
-                    >
+                    <p>
                         Desde criança apaixonado por Tecnologia.
                     </p>
-                    <p 
-                        class="mx-5"
-                    >
+                    <p>
                         Sempre tive curiosidade e vontade de aprender desenvolver a aplicações para web.
                     </p>
-                    <p 
-                        class="mx-5"
-                    >
+                    <p>
                         Em Agosto de 2022 que decidi aprender a desenvolver, e sigo estudando novas Tecnologias e aprimorando-as.
                     </p>
                 </div>
@@ -153,7 +206,7 @@
                 class="pad"
             ></div>
             <div 
-                class="row tec px-5"
+                class="row tec px-2"
                 id="tec"
             >
                 <div 
@@ -163,10 +216,10 @@
                         Habilidades
                     </h1>
                     <div 
-                        class="row align-items-center justify-content-center pt-5"
+                        class="row align-items-center justify-content-center"
                     >
                         <div 
-                            class="col-5 habilidadescontainer"
+                            class="col-lg-5 py-2 habilidadescontainer"
                             data-aos="fade-down-right"    
                         >
                             <div 
@@ -225,7 +278,7 @@
                             ></div>
                         </div>
                         <div 
-                            class="col-5"
+                            class="col-lg-5"
                             data-aos="fade-down-left" 
                         >
                             <h1
@@ -239,7 +292,7 @@
                                 < Passe o mouse sobre as Tecnologias para ver as descrições />
                             </h3>
                             <!--barra de progresso-->
-                            <div 
+                            <!-- <div 
                                 class="progresso "
                                 id="progresso"
                             >
@@ -260,7 +313,7 @@
                                     <br>
                                     95%
                                 </span>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -279,10 +332,10 @@
                 >
                     <h1>Projetos</h1>
                     <div 
-                        class="col-12 d-inline-flex"
+                        class="col-12 col-lg-4 d-inline-flex"
                     >
                         <div 
-                            class="col-3"
+                            class="col-6"
                             >
                             <div
                                 data-aos="fade-down"
@@ -321,7 +374,7 @@
                             </a>
                         </div>
                         <div 
-                            class="col-3"
+                            class="col-6"
                             >
                             <div
                                 class="projetos"
@@ -359,8 +412,12 @@
                                 ></i>
                             </a>
                         </div>
+                    </div>
+                    <div 
+                        class="col-12 col-lg-4 d-inline-flex"
+                    >
                         <div 
-                            class="col-3"
+                            class="col-6"
                             >
                             <div
                                 class="projetos"
@@ -399,7 +456,7 @@
                             </a>
                         </div>
                         <div 
-                            class="col-3"
+                            class="col-6"
                             >
                             <div
                                 class="projetos"
@@ -439,10 +496,10 @@
                         </div>
                     </div>
                     <div 
-                        class="col-12 d-inline-flex "
+                        class="col-12 col-lg-4 d-inline-flex "
                     >
                         <div 
-                            class="col-3"
+                            class="col-6"
                         >
                             <div
                                 class="projetos"
@@ -481,7 +538,7 @@
                             </a>
                         </div>
                         <div 
-                            class="col-3"
+                            class="col-6"
                             >
                             <div
                                 class="projetos"
@@ -520,8 +577,12 @@
                                 </i>
                             </a>
                         </div>
+                    </div>
+                    <div 
+                        class="col-12 col-lg-4 d-inline-flex"
+                    >
                         <div 
-                            class="col-3 "
+                            class="col-6"
                             >
                             <div
                                 class="projetos"
@@ -560,7 +621,7 @@
                             <!-- </a> -->
                         </div>
                         <div 
-                            class="col-3"
+                            class="col-6"
                             >
                             <div
                                 class="projetos"
@@ -619,7 +680,7 @@
                     </span>
                     <span>
                         <a 
-                            href="https://www.linkedin.com/in/caique-rodrigues-a113ab249/"
+                            href="https://github.com/Caiqueerodrigues/"
                             target="_blank"
                         >
                             <i 
@@ -637,10 +698,11 @@
                             target="_blank"
                         >
                             <i
-                                id="gmail"
                                 class="bi bi-google"
                             >
-                                <span>
+                                <span
+                                    id="gmail"
+                                >
                                     caiquerodriguesalmeida@gmail.com
                                 </span>
                             </i>

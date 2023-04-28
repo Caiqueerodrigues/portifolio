@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+@media (max-width: 767px) {
+    #menu-hamburguer {
+        display: block;
+    }
+    div > .header > p {
+        font-size: 1.6rem;
+    }
+    #bio {
+        width: 98%;
+        padding: 10px 5px;
+    }
+    #bio > div > h1 {
+        font-size: 1.6rem;
+    }
+    #bio > div > p {
+        width: 100%;
+        font-size: .9rem;
+    }
+    #nome {
+        text-indent: 0;
+    }
+    #foto {
+        display: none;
+    }
+    .tec > div > h1, #title {
+        padding-top: 10%;
+        font-size: 1.2rem;
+    }
+    .habilidades {
+        display: inline-flex;
+        width: 70px;
+        height: 70px;
+        border-radius: 25px;
+        padding: 2px;
+        filter: grayscale(100%);
+    }
+    .habilidadescontainer {
+        font-size: .8rem;
+    }
+    #descricao {
+        min-height: 50vh;
+    }
+    .pNome {
+        font-size: .8rem;
+   }
+   #projetos {
+    height: 170vh;
+   }
+    #virada {
+        min-width: 152%;
+        height: 30%;
+    }
+    #virada:hover {
+        animation: space 2s;
+        font-size: .8em;
+    }
+    i > span {
+        font-size: .8rem;
+    }
+    #gmail {
+        font-size: .6rem;
+    }
+    .footer {
+        height: 10vh;
+    }
+}
+
+/* @media (min-width: 768px) {
+    div > .header > p {
+        font-size: 1.4rem;
+    }
+    #menu-tela-grande {
+        display: inline-flex;
+    }
+    #menu-tela-grande > li > a > button {
+        font-size: .9rem;
+        padd
+    }
+} */
