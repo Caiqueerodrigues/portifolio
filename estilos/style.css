@@ -67,11 +67,7 @@ li {
     display: none;
 }
 .headerNav {
-    position: fixed;
-    top: 0;
-    width: 100%;
     height: 80px;
-    z-index: 999px;
     background-color: #1864f2a8;
 }
 div > .header > p {
@@ -147,7 +143,7 @@ button:hover {
     min-height: 90vh;
 }
 .titleContact {
-    padding-top: 8vh;
+    padding-top: 10vh;
     font-family: var(--fonte-jogo);
     color: white;
 }
@@ -171,4 +167,7 @@ a > i:hover, i > span:hover {
     background-color: var(--cor-principal);
     height: 7vh;
     color: #fff;
+}
+.text-indent {
+    text-indent: 0;
 }
