@@ -22,7 +22,6 @@
     border-radius: 20px;
     box-shadow: 5px 5px 10px var(--cor-terciaria);
     margin: 5px;
-    column-gap: 0;
 }
 #urna {
     background: transparent url(../_imagens/projetos/urna.png) center;
