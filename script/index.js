@@ -114,6 +114,7 @@ document.getElementById('menu-hamburguer').addEventListener('click', () => {
     let menu = document.getElementById('menu-tela-pequena')
     let divFechaMenu = document.getElementById('fechaMenu')
     if(menuShow) {
+        divFechaMenu.style.display='block'
         menu.style.display='block'
         menuShow = !menuShow
         divFechaMenu.style.display='block'
@@ -126,5 +127,6 @@ document.getElementById('menu-hamburguer').addEventListener('click', () => {
     }
     divFechaMenu.addEventListener('click', () => {
         menu.style.display='none' 
+        divFechaMenu.style.display='none'
     })
 })
