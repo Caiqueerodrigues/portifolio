@@ -12,10 +12,6 @@
     padding: 0;
 }
 
-/* body, html {
-    overflow-x: hidden;
-} */
-
 :root {
     --cor-principal: #2130DB;
     --cor-secundaria: #1864F2;
@@ -25,14 +21,13 @@
     --fonte-jogo: 'Press Start 2P', cursive;
 }
 
-.body {
-    overflow-x: hidden;
-}
+
 body {
     height: 100vh;
     background: linear-gradient(to right,var(--cor-secundaria), var(--cor-terciaria));
     font-family: 'Montserrat', sans-serif;
     text-indent: 40px;
+    overflow-x: hidden;
 }
 #menu-hamburguer {
     display: none;
