@@ -12,6 +12,7 @@
     text-indent: 0;
     font-family: var(--fonte-jogo);
 }
+
 #descricao {
     font-size: 1.35rem;
     min-height: 50vh;
@@ -36,7 +37,7 @@
     background: #ffffff67 url(../_imagens/js.png) no-repeat;
     background-size: contain;
 }#sass {
-    background: #ffffff67 url(../_imagens/sass.png) center  no-repeat;
+    background: #ffffff67 url(../_imagens/sass.png) center no-repeat;
     background-size: contain;
 }
 #bootstrap {
@@ -69,7 +70,7 @@
     transition: .5s;
 }
 
-.progresso {
+/* .progresso {
     margin: auto;
     width: 300px;
     height: 300px;
@@ -111,4 +112,4 @@ svg circle{
 
     stroke-dashoffset: calc(440 - (440*90) /100);
     stroke: var(--cor-principal);
-}
+} */

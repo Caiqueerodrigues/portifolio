@@ -13,7 +13,7 @@
 }
 
 /* body, html {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
 } */
 
 :root {
@@ -23,6 +23,10 @@
     --cor-distante: #7717E8;
     --font-maquina: 'Courgette', serif;
     --fonte-jogo: 'Press Start 2P', cursive;
+}
+
+.body {
+    overflow-x: hidden;
 }
 body {
     height: 100vh;
@@ -59,7 +63,7 @@ li {
     top: 40px;
     left: 0;
     margin-top: 40px;
-    width: 100%;
+    width: 80%;
 }
 #menu-tela-grande, #menu-tela-pequena {
     display: none;
@@ -71,9 +75,10 @@ li {
     display: none;
 }
 .headerNav {
+    position: fixed;
     height: 80px;
-    background-color: #1864f2a8;
-    width: 100vw;
+    background-color: #1864f2d6;
+    width:100%;
 }
 div > .header > p {
     background: -webkit-linear-gradient(var(--cor-principal), var(--cor-distante), var(--cor-secundaria));
