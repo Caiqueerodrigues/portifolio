@@ -20,14 +20,15 @@
     --font-maquina: 'Courgette', serif;
     --fonte-jogo: 'Press Start 2P', cursive;
 }
-
+.body {
+    overflow-x: hidden;
+}
 
 body {
     height: 100vh;
     background: linear-gradient(to right,var(--cor-secundaria), var(--cor-terciaria));
     font-family: 'Montserrat', sans-serif;
     text-indent: 40px;
-    overflow-x: hidden;
 }
 #menu-hamburguer {
     display: none;
@@ -58,7 +59,8 @@ li {
     top: 40px;
     left: 0;
     margin-top: 40px;
-    width: 80%;
+    width: 90%;
+    z-index: 2;
 }
 #menu-tela-grande, #menu-tela-pequena {
     display: none;
