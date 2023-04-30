@@ -68,13 +68,16 @@
      /* div > .header > p {
         font-size: 1.4rem;
     } */
+    #bio {
+        height: max-content;
+    }
     #menu-tela-grande {
         display: inline-flex;
     }
     #menu-tela-grande > li > a > button {
         font-size: .8rem;
         width: max-content;
-        margin: 0 15px;
+        margin: 0 10px;
     }
     nav {
         float: right;
@@ -82,7 +85,17 @@
     #virada {
         min-width: 200%;
     }
-    
+    #foto {
+        display: inline-flex;
+        width: 200px;
+        height: 250px;
+    }
+    #projetos {
+        height: max-content;
+    }
+    .footer {
+        height: 10vh;
+    }
 }
 
 @media (min-width: 992px) {
@@ -93,7 +106,6 @@
         border: 3px solid var(--cor-distante);
     }
     #foto {
-        display: inline-flex;
         width: 250px;
         height: 300px;
     }
@@ -102,5 +114,8 @@
     }
     #projetos {
         max-height: 100vh;
+    }
+    .footer {
+        height: 8vh;
     }
 } 
