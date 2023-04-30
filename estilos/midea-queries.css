@@ -69,6 +69,7 @@
         font-size: 1.4rem;
     } */
     #bio {
+        min-height: 80vh;
         height: max-content;
     }
     #menu-tela-grande {
