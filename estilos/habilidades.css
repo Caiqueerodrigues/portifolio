@@ -52,6 +52,10 @@
     background: #ffffff67 url(../_imagens/vue.webp) no-repeat;
     background-size: contain;
 }
+#react {
+    background: #ffffff67 url(../_imagens/React.png) center no-repeat;
+    background-size: contain;
+}
 #git {
     background: #ffffff67 url(../_imagens/git.png) no-repeat;
     background-size: contain;

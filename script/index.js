@@ -74,6 +74,10 @@ function descricao(element) {
         // circule.style.strokeDashoffset= 'calc(440 - (440*30) /100)'
         // porcentagemBarra.innerHTML = `${textContent} 30%`
     }
+    if (element === 'react') {
+        title.textContent = 'React'
+        descricaoP.textContent = `Uma das bibliotecas de JavaScript mais populares para desenvolvimento de aplicativos web ou para dispositivos móveis. Criado pelo Facebook, contém uma coleção de trechos de código de JavaScript reutilizáveis chamados componentes, usados para a construção da interface do usuário.`
+    }
     if( element === 'git') {
         title.textContent = 'Git'
         descricaoP.textContent = `É um sistema para controle de versionamento, muito útil para evitar perdas e erros, e também para o compartilhamento de códigos entre pessoas.`
