@@ -45,11 +45,11 @@
     .pNome {
         font-size: .8rem;
     }
-    #virada {
+    .virada {
         min-width: 152%;
         height: 30%;
     }
-    #virada:hover {
+    .virada:hover {
         animation: space 2s;
         font-size: .8em;
     }
@@ -83,13 +83,13 @@
     nav {
         float: right;
     }
-    #virada {
+    .virada {
         min-width: 200%;
     }
     #foto {
         display: inline-flex;
-        width: 200px;
-        height: 250px;
+        width: 240px;
+        height: 200px;
     }
     #projetos {
         height: max-content;
@@ -107,8 +107,8 @@
         border: 3px solid var(--cor-distante);
     }
     #foto {
-        width: 250px;
-        height: 300px;
+        width: 240px;
+        height: 200px;
     }
     .tec {
         min-height: 95vh;

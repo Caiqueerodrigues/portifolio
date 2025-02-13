@@ -23,26 +23,6 @@
     box-shadow: 5px 5px 10px var(--cor-terciaria);
     margin: 5px;
 }
-#urna {
-    background: transparent url(../_imagens/projetos/urna.png) center;
-    background-size: cover;
-}
-#pedra {
-    background: transparent url(../_imagens/projetos/pedra\,papel\,tesoura.png) center;
-    background-size: cover;
-}
-#space {
-    background: transparent url(../_imagens/projetos/one-bit-x.png) center;
-    background-size: cover;
-}
-#calculadora {
-    background-size: cover;
-    background: transparent url(../_imagens/projetos/calculadora.png)center;
-}
-#velha {
-    background: transparent url(../_imagens/projetos/jogo-da-vellha.png) center;
-    background-size: cover;
-}
 #controlev1 {
     background: transparent url(../_imagens/projetos/casa-de-racao.png)center;
     background-size: cover;
@@ -51,7 +31,7 @@
     background: transparent url(../_imagens/projetos/casa-de-racao-v2.png)center;
     background-size: cover;
 }
-#urnaLegenda, #pedraLegenda, #spaceLegenda, #calculadoraLegenda, #velhaLegenda, #controlev1Legenda, #controlev2Legenda {
+#controlev1Legenda, #controlev2Legenda {
     display: none;
 }
 i {
@@ -71,13 +51,14 @@ i:hover {
     font-family: 'Courgette', sans-serif;
     margin-bottom: 0;
 }
-#emBreve {
-    background-color: #ffffffb1;
+.emManutencao {
+    background: #ffffffb1 url('../_imagens/manutencao.png') no-repeat center;
+    background-size: contain;
     overflow: hidden;
     display: flex;
     place-content: center;
 }
-#virada {
+.virada {
     display: flex;
     background-color: #1864F2;
     padding: 15px;
@@ -91,12 +72,12 @@ i:hover {
     box-shadow: 2px 2px 35px #1797E8;
     text-shadow: 2px 2px 5px var(--cor-distante);
 }
-#virada:hover {
+.virada:hover {
     animation: space 2s;
 }
 @keyframes space {
-    0% {letter-spacing: 1rem;}
-    100% {letter-spacing: 1.5rem;}
+    0% {letter-spacing: .8rem;}
+    100% {letter-spacing: .6rem;}
 }
 
 a {

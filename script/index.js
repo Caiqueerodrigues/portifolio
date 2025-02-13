@@ -1,5 +1,5 @@
 function maquina () {
-    const nome = 'Caique Rodrigues '
+    const nome = 'Caique Rodrigues Desenvolvedor fullstack'
     const nomeArray = nome.split('')
     document.getElementById('nome').innerHTML = ''
     nomeArray.forEach((element, i) => {
@@ -10,7 +10,7 @@ function maquina () {
 }
 setInterval( () => {
     maquina()
-}, 1000 * 4)
+}, 1000 * 7)
 maquina(nome)
 
 let frase = '< Passe o mouse sobre as Tecnologias para ver as descrições />'
@@ -23,78 +23,27 @@ let title = document.getElementById('title')
 let menuShow = true
 
 function descricao(element) {
-    if(element === 'html') {
-        title.textContent = 'HTML'
-        descricaoP.textContent = `É uma linguagem de marcação de texto, o esqueleto de uma aplicação WEB.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*90) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 90%`
+    const descricaoTecnologias = {
+        'HTML': `É uma linguagem de marcação de texto, o esqueleto de uma aplicação WEB.`,
+        'CSS': `É uma linguagem de estilização, onde se define a aparência de uma aplicação WEB.`,
+        'Javascript': `É uma linguagem de programação. É a parte lógica da aplicação e
+        uma das principais linguagens atuais da WEB, junto ao HTML e CSS.`,
+        'SASS': `Syntactically Awesome Style Sheets. Potencializador ao CSS, tornando-o mais eficaz na estilização.`,
+        'Bootstrap': `É um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.`,
+        'Vuetify': `É um framework progressivo que busca levar o desenvolvimento web para o próximo nível, com componentes pré-prontos e responsivos.`,
+        'Vue': `É um framework JavaScript de código aberto para a criação de aplicações web. Cria aplicações de forma reativa, utilizando o DOM virtual, fazendo com que seja extremamente performático.`,
+        'Angular': 'É um framework front-end desenvolvido pelo Google para criar aplicações web dinâmicas e escaláveis. Utiliza TypeScript e possui uma arquitetura robusta baseada em componentes.',
+        'React': `Uma das bibliotecas de JavaScript mais populares para desenvolvimento de aplicativos web ou para dispositivos móveis. Criado pelo Facebook, contém uma coleção de trechos de código de JavaScript reutilizáveis chamados componentes, usados para a construção da interface do usuário.`,
+        'Node': 'É uma plataforma baseada em JavaScript para desenvolvimento de servidores e aplicações em tempo real. Permite executar código JavaScript no lado do servidor, sendo altamente eficiente e escalável.',
+        'Java': 'É uma linguagem de programação orientada a objetos, amplamente utilizada no desenvolvimento de aplicações empresariais, sistemas web e aplicativos móveis. É conhecida pela sua portabilidade e robustez.',
+        'Spring boot': 'É um framework para desenvolvimento de aplicações Java, que facilita a criação de sistemas de backend, com foco na simplicidade e agilidade, utilizando uma configuração mínima.',
+        'My SQL': 'É um sistema de gerenciamento de banco de dados relacional (SGBD), de código aberto, amplamente utilizado em aplicações web para armazenar e gerenciar dados de maneira eficiente e escalável.',
+        'Git': `É um sistema para controle de versionamento, muito útil para evitar perdas e erros, e também para o compartilhamento de códigos entre pessoas.`,
+        'Github': `É uma plataforma online para salvar versionamentos de códigos, encontrar projetos de código abertos e seguir outras pessoas.`
+    };
 
-    }
-    if( element === 'css') {
-        title.textContent = 'CSS'
-        descricaoP.textContent = `É uma linguagem de estilização, onde se define a aparência de uma aplicação WEB.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*90) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 90%`
-    }
-    if( element === 'js') {
-        title.textContent = 'Javascript'
-        descricaoP.textContent = `É uma linguagem de programação. É a parte lógica da aplicação e
-        uma das principais linguagens atuais da WEB, junto ao HTML e CSS.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*80) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 80%`
-    }
-    if( element === 'sass') {
-        title.textContent = 'SASS'
-        descricaoP.textContent = `Syntactically Awesome Style Sheets. Potencializador ao CSS, tornando-o mais eficaz na estilização.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*50) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 50%`
-    }
-    if( element === 'bootstrap') {
-        title.textContent = 'Bootstrap'
-        descricaoP.textContent = `É um framework front-end que fornece estruturas de CSS para a criação de sites e aplicações responsivas de forma rápida e simples.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*75) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 75%`
-    }
-    if( element === 'vuetify') {
-        title.textContent = 'Vuetify'
-        descricaoP.textContent = `É um framework progressivo que busca levar o desenvolvimento web para o próximo nível, com componentes pré-prontos e responsivos.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*70) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 70%`
-    }
-    if( element === 'vue') {
-        title.textContent = 'Vue'
-        descricaoP.textContent = `É um framework JavaScript de código aberto para a criação de aplicações web. Cria aplicações de forma reativa, utilizando o DOM virtual, fazendo com que seja extremamente performático.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*30) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 30%`
-    }
-    if (element === 'react') {
-        title.textContent = 'React'
-        descricaoP.textContent = `Uma das bibliotecas de JavaScript mais populares para desenvolvimento de aplicativos web ou para dispositivos móveis. Criado pelo Facebook, contém uma coleção de trechos de código de JavaScript reutilizáveis chamados componentes, usados para a construção da interface do usuário.`
-    }
-    if( element === 'git') {
-        title.textContent = 'Git'
-        descricaoP.textContent = `É um sistema para controle de versionamento, muito útil para evitar perdas e erros, e também para o compartilhamento de códigos entre pessoas.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*50) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 50%`
-    }
-    if( element === 'github') {
-        title.textContent = 'Github'
-        descricaoP.textContent = `É uma plataforma online para salvar versionamentos de códigos, encontrar projetos de código abertos e seguir outras pessoas.`
-        // barraProgresso.style.display = 'flex'
-        // circule.style.strokeDashoffset= 'calc(440 - (440*50) /100)'
-        // porcentagemBarra.innerHTML = `${textContent} 50%`
-    }
-    
-    
-
+    title.textContent = element;
+    descricaoP.textContent = descricaoTecnologias[element];
 }
 
 function fim() {

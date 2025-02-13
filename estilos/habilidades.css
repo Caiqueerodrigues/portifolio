@@ -52,8 +52,28 @@
     background: #ffffff67 url(../_imagens/vue.webp) no-repeat;
     background-size: contain;
 }
+#angular {
+    background: #ffffff67 url(../_imagens/angular.png) no-repeat;
+    background-size: contain;
+}
 #react {
     background: #ffffff67 url(../_imagens/React.png) center no-repeat;
+    background-size: contain;
+}
+#node {
+    background: #ffffff67 url(../_imagens/node.webp) center no-repeat;
+    background-size: contain;
+}
+#java {
+    background: #ffffff67 url(../_imagens/java.png) center no-repeat;
+    background-size: contain;
+}
+#spring {
+    background: #ffffff67 url(../_imagens/Spring_Boot.png) center no-repeat;
+    background-size: contain;
+}
+#mySql {
+    background: #ffffff67 url(../_imagens/sql.png) center no-repeat;
     background-size: contain;
 }
 #git {

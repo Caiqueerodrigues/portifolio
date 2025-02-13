@@ -21,7 +21,7 @@
     --fonte-jogo: 'Press Start 2P', cursive;
 }
 .body {
-    overflow-x: hidden;
+    /* overflow: hidden; */
 }
 
 body {
@@ -76,6 +76,7 @@ li {
     height: 80px;
     background-color: #1864f2d6;
     width:100%;
+    z-index: 10;
 }
 div > .header > p {
     background: -webkit-linear-gradient(var(--cor-principal), var(--cor-distante), var(--cor-secundaria));
@@ -108,16 +109,17 @@ button:hover {
 #foto {
     display: none;
     width: 200px;
-    height: 250px;
-    background: #fff url(../_imagens/foto.jpg) center no-repeat;
+    background: #fff url(../_imagens/foto.png) center no-repeat;
     background-size: contain;
     margin-right: 10px;
     box-shadow: 5px 15px 15px var(--cor-secundaria);
-    border-radius: 50% 50% 50% 50% / 67% 66% 34% 33%  ; 
+    border-radius: 20px 40px;
+    box-shadow: 10px 10px 40px var(--cor-distante);
+    /* border-radius: 50% 50% 50% 50% / 67% 66% 34% 33%  ;  */
     float: right;
 }
 #foto:hover {
-    transform: scale(.8);
+    transform: scale(1.5);
     transition: .5s;
 }
 #nome::after {
@@ -135,7 +137,7 @@ button:hover {
     text-shadow: 2px 2px 15px var(--cor-terciaria);
 }
 #pad, .pad {
-    height: 10vh;
+    height: 15vh;
 }
 #bio {
     padding: 40px;
@@ -175,6 +177,8 @@ a > i:hover, i > span:hover {
     background-color: var(--cor-principal);
     height: 10vh;
     color: #fff;
+    font-size: .8rem;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .text-indent {
     text-indent: 0;
